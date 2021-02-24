@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Vanilla JavaScript Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+  <body>
+    <main>
+      <div class="calculator">
+        <div class="row">
+          <button class="button">C</button>
+          <output id="output">0</output>
+        </div>
+        <div class="row">
+          <button id="7" class="button">7</button>
+          <button id="8" class="button">8</button>
+          <button id="9" class="button">9</button>
+          <button id="add" class="button">+</button>
+        </div>
+        <div class="row">
+          <button id="4" class="button">4</button>
+          <button id="5" class="button">5</button>
+          <button id="6" class="button">6</button>
+          <button id="subtract" class="button">-</button>
+        </div>
+        <div class="row">
+          <button id="1" class="button">1</button>
+          <button id="2" class="button">2</button>
+          <button id="3" class="button">3</button>
+          <button id="multiply" class="button">*</button>
+        </div>
+        <div class="row">
+          <button id="0" class="button">0</button>
+          <button id="dot" class="button">.</button>
+          <button id="equal" class="button">=</button>
+          <button id="divide" class="button">/</button>
+        </div>
+      </div>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
 </html>
