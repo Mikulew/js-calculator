@@ -4,6 +4,7 @@
 
 - [General info](#general-info)
 - [Technologies](#technologies)
+- [Demo](#demo)
 
 ## General info
 
@@ -15,3 +16,7 @@ Each developer has to write his own calculator. I caught up with this project.
 - CSS
 - JavaScript (ES6+)
 - npm
+
+## Demo
+
+see here: https://mikulew.github.io/js-calculator/
