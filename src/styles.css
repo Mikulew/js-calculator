@@ -86,6 +86,7 @@ main {
 }
 
 #output {
+  font-size: 28px;
   color: white;
   background-color: #108378;
   width: 170px;
