@@ -28,9 +28,8 @@ function operatorPress(key) {
 
   if (key === 'equal') {
     currentNumber = calculate();
-    console.log('currentNumber', currentNumber)
     updateDisplay(currentNumber);
-    clearButtonPress(currentNumber);
+    clearDisplay(currentNumber);
   } else {
     currentNumber = '0';
     updateDisplay();
@@ -69,15 +68,18 @@ function operate(value1, value2, operator) {
   }
 }
 
-function clearButtonPress (num = '0') {
+function clearDisplay (num = '0') {
+  console.log('CLEAR: ', num)
   numbers = [];
   operations = [];
   currentNumber = num;
+  operationMode = false;
+  updateDisplay(currentNumber);
 }
 
 function updateDisplay(num = '0') {
   const digitCount = num.length;
-  console.log('updateDisplay', num)
+  console.log('DISPLAY UPDATED: ', num)
 
   if (digitCount >= 11 && digitCount < 15) {
     output.style.fontSize = '20px';
@@ -91,12 +93,12 @@ function updateDisplay(num = '0') {
 }
 
 function handleButtonPress(key) {
-  console.log('handleButtonPress', key)
+  console.log('HANDE BUTTON: ', key)
 
-  if ((key === 'dot')) {
+  if (key === 'dot') {
     decimalPress();
   } else if (key === 'clear') {
-    clearButtonPress();
+    clearDisplay();
   } else if (!isNaN(Number.parseInt(key))) {
     numberPress(key);
   } else {
