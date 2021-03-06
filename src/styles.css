@@ -97,6 +97,7 @@ main {
   border-radius: 0 10px 0 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #clear {
