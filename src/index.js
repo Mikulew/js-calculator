@@ -6,6 +6,9 @@ const output = document.getElementById('output')
 
 function decimalPress() {
   console.log('DECIMAL PRESS');
+  if (currentNumber.includes('.')) {
+    return;
+  }
   currentNumber = currentNumber + '.';
   updateDisplay(currentNumber);
 }
