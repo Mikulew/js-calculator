@@ -86,8 +86,11 @@ function updateDisplay(num = '0') {
 
   if (digitCount >= 11 && digitCount < 15) {
     output.style.fontSize = '20px';
-  } else if (digitCount >= 15) {
+  } else if (digitCount >= 15 && digitCount < 19) {
     output.style.fontSize = '15px';
+  } else if (digitCount >= 19) {
+    output.style.fontSize = '20px';
+    return output.innerText = "Maximum";
   } else {
     output.style.fontSize = '28px';
   }
