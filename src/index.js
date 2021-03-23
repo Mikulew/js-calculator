@@ -113,7 +113,7 @@ function handleButtonPress(key) {
 }
 
 function init() {
-  Array.from(document.getElementsByClassName('button'))
+  Array.from(document.getElementsByClassName('key'))
     .forEach(button => {
       button.addEventListener('click', () => handleButtonPress(button.id))
     })

@@ -10,62 +10,72 @@
   <body>
     <main>
       <div class="calculator">
-        <div class="row">
-          <button id="clear" class="button button-functional button-primary">
+        <div class="calculator__keys">
+          <button 
+            id="clear"
+            class="key key--operator key--primary"
+            data-action="clear"
+          >
             C
           </button>
           <output id="output">0</output>
         </div>
-        <div class="row">
-          <button id="7" class="button">7</button>
-          <button id="8" class="button">8</button>
-          <button id="9" class="button">9</button>
+        <div class="calculator__keys">
+          <button id="7" class="key">7</button>
+          <button id="8" class="key">8</button>
+          <button id="9" class="key">9</button>
           <button
             id="add"
-            class="button button button-functional button-secondary"
+            class="key button key--operator key--secondary"
+            data-action="add"
           >
             +
           </button>
         </div>
-        <div class="row">
-          <button id="4" class="button">4</button>
-          <button id="5" class="button">5</button>
-          <button id="6" class="button">6</button>
+        <div class="calculator__keys">
+          <button id="4" class="key">4</button>
+          <button id="5" class="key">5</button>
+          <button id="6" class="key">6</button>
           <button
             id="subtract"
-            class="button button button-functional button-secondary"
+            class="key button key--operator key--secondary"
+            data-action="subtract"
           >
             -
           </button>
         </div>
-        <div class="row">
-          <button id="1" class="button">1</button>
-          <button id="2" class="button">2</button>
-          <button id="3" class="button">3</button>
+        <div class="calculator__keys">
+          <button id="1" class="key">1</button>
+          <button id="2" class="key">2</button>
+          <button id="3" class="key">3</button>
           <button
             id="multiply"
-            class="button button button-functional button-secondary"
+            class="key button key--operator key--secondary"
+            data-action="multiply"
           >
             *
           </button>
         </div>
-        <div class="row">
-          <button id="zero" class="button">0</button>
+        <div class="calculator__keys">
+          <button id="zero" class="key">0</button>
           <button
             id="dot"
-            class="button button button-functional button-primary"
+            class="key button key--operator key--primary"
+            data-action="decimal"
           >
             .
           </button>
           <button
             id="equal"
-            class="button button button-functional button-primary"
+            class="key button key--operator key--primary"
+            data-action="calculate"
           >
             =
           </button>
           <button
             id="divide"
-            class="button button button-functional button-secondary"
+            class="key button key--operator key--secondary"
+            data-action="divide"
           >
             /
           </button>

@@ -51,13 +51,13 @@ main {
   border-radius: 10px;
 }
 
-.row {
+.calculator__keys {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.button {
+.key {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,19 +69,19 @@ main {
   transition: 0.15s;
 }
 
-.button:hover {
+.key:hover {
   box-shadow: 0 0 2px black;
 }
 
-.button-functional {
+.key--operator {
   color: white;
 }
 
-.button-primary {
+.key--primary {
   background-color: #ad2f16;
 }
 
-.button-secondary {
+.key--secondary {
   background-color: #4e0110;
 }
 
