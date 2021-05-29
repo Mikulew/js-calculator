@@ -1,3 +1,13 @@
+const OPERATION = {
+  ADD: 'add',
+  SUBSTRACT: 'subtract',
+  MULTIPLY: 'multiply',
+  DIVIDE: 'divide',
+  DOT: 'dot',
+  CLEAR: 'clear',
+  EQUAL: 'equal'
+};
+
 let numbers = [];
 let operations = [];
 let currentNumber = '0';
@@ -29,7 +39,7 @@ function operatorPress(key) {
   console.log('OPERATOR PRESS: ', key)
   numbers.push(currentNumber);
 
-  if (key === 'equal') {
+  if (key === OPERATION.EQUAL) {
     currentNumber = calculate();
     updateDisplay(currentNumber);
     clearDisplay(currentNumber);
@@ -58,13 +68,13 @@ function calculate() {
 function operate(value1, value2, operator) {
   console.log('OPERATE: ', value1, value2, operator);
   switch (operator) {
-    case 'add':
+    case OPERATION.ADD:
       return value1 + value2;
-    case 'subtract':
+    case OPERATION.SUBTRACT:
       return value1 - value2;
-    case 'multiply':
+    case OPERATION.MULTIPLY:
       return value1 * value2;
-    case 'divide':
+    case OPERATION.DIVIDE:
       return value1 / value2;
     default:
       return '0';
@@ -101,9 +111,9 @@ function updateDisplay(num = '0') {
 function handleButtonPress(key) {
   console.log('HANDE BUTTON: ', key)
 
-  if (key === 'dot') {
+  if (key === OPERATION.DOT) {
     decimalPress();
-  } else if (key === 'clear') {
+  } else if (key === OPERATION.CLEAR) {
     clearDisplay();
   } else if (!isNaN(Number.parseInt(key))) {
     numberPress(key);
